@@ -1,0 +1,87 @@
+\documentclass[UTF8]{ctexart}
+
+\title{文档预览器}
+\author{刘添翼}
+\date{\today}
+
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+}
+
+\usepackage{listings}
+\lstset{
+	columns=fixed,       
+	numbers=left,     % 在左侧显示行号
+	language=java,    % 设置语言
+}
+
+\usepackage{graphicx}
+\usepackage{float}
+
+\begin{document}
+\maketitle
+\tableofcontents
+\section{最后期限}
+Project2的最后期限是\textbf{北京时间2021年11月14日23时59分}。
+
+
+在此之前，每位同学需要提交课程项目的源码、可执行文件和项目报告到...
+
+\section{技术指标}
+
+\subsection{对Microsoft Word文档的支持}
+借助已经存在的开源的\emph{C++}库...
+
+\paragraph{问题2.1.}
+我对\underline{Microsoft Word}和XML都完全不熟悉，我要怎么办？
+
+这里有一个超链接\href{https://cn.bing.com/}{必应}，STFW。
+
+\begin{itemize}
+    \item Fedora
+    \item Fedora Spin
+    \item Fedora Silverblue
+\end{itemize}
+
+\begin{enumerate}
+    \item Fedora CoreOS
+    \item Fedora Silverblue
+    \item Fedora Spin
+\end{enumerate}
+
+\begin{lstlisting}
+public class Demo {
+    public static int binaryOne(int n) {
+        if (n <= 0)
+            throw new RuntimeException();
+
+        if (n == 1) {
+            return 1;
+        } else if (n % 2 == 0) {
+            return binaryOne(n / 2);
+        } else {
+            return 1 + binaryOne(n / 2);
+        }
+    }
+
+
+    public static void main(String[] args) {
+        binaryOne(3);
+    }
+}
+\end{lstlisting}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics{img/88833228_p0.jpg}
+\end{figure}
+
+\begin{equation}
+J(x)=L i(x)-\sum_{\rho} L i\left(x^{\rho}\right)-\ln 2+\int_{0}^{\infty} \frac{d t}{t\left(t^{2}-1\right) \ln t}
+\end{equation}
+
+\end{document}
